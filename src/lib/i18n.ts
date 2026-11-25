@@ -1,0 +1,91 @@
+export type Lang = 'en' | 'ar';
+
+const strings = {
+  appName: { en: 'QuizForge', ar: 'كويز فورج' },
+  tagline: { en: 'Turn any PDF into a quiz in seconds', ar: 'حوّل أي PDF لأسئلة في ثواني' },
+  heroSub: {
+    en: 'Upload your lecture slides or summaries. Get MCQ questions and flashcards. Free, private, no signup.',
+    ar: 'ارفع محاضراتك أو ملخصاتك. خد أسئلة اختيار من متعدد وكروت مراجعة. مجاني وخاص ومن غير تسجيل.',
+  },
+  dropTitle: { en: 'Drop your PDF here', ar: 'اسحب ملف الـ PDF هنا' },
+  dropOr: { en: 'or', ar: 'أو' },
+  browse: { en: 'Browse files', ar: 'اختار ملف' },
+  pasteText: { en: 'Paste text instead', ar: 'الصق نص بدل الملف' },
+  tryDemo: { en: 'Try with a sample (no key needed)', ar: 'جرب بعينة (من غير مفتاح)' },
+  step1t: { en: 'Upload', ar: 'ارفع' },
+  step1d: { en: 'PDF slides, summaries, notes', ar: 'سلايدز أو ملخصات أو مذكرات PDF' },
+  step2t: { en: 'Generate', ar: 'ولّد' },
+  step2d: { en: 'MCQs and flashcards from the content', ar: 'أسئلة وكروت مراجعة من المحتوى' },
+  step3t: { en: 'Study', ar: 'ذاكر' },
+  step3d: { en: 'Quiz yourself or export to Anki', ar: 'اختبر نفسك أو صدّر لـ Anki' },
+  privacyNote: {
+    en: 'Your file never leaves your browser. The AI call goes straight from your device with your own key.',
+    ar: 'ملفك لا يغادر متصفحك. الاتصال بالذكاء الاصطناعي يتم من جهازك مباشرة بمفتاحك الخاص.',
+  },
+  settings: { en: 'Settings', ar: 'الإعدادات' },
+  provider: { en: 'AI provider', ar: 'مزود الذكاء الاصطناعي' },
+  apiKey: { en: 'API key', ar: 'مفتاح API' },
+  keyHelp: {
+    en: 'Stored only in this browser (localStorage). Never sent anywhere except the AI provider.',
+    ar: 'يُحفظ في هذا المتصفح فقط. لا يُرسل لأي مكان غير مزود الذكاء الاصطناعي.',
+  },
+  model: { en: 'Model', ar: 'النموذج' },
+  save: { en: 'Save', ar: 'حفظ' },
+  configure: { en: 'What do you want from this file?', ar: 'عايز تطلع إيه من الملف ده؟' },
+  mcqCount: { en: 'MCQ questions', ar: 'أسئلة اختيار من متعدد' },
+  cardCount: { en: 'Flashcards', ar: 'كروت مراجعة' },
+  difficulty: { en: 'Difficulty', ar: 'الصعوبة' },
+  easy: { en: 'Easy', ar: 'سهل' },
+  medium: { en: 'Medium', ar: 'متوسط' },
+  hard: { en: 'Hard', ar: 'صعب' },
+  mixed: { en: 'Mixed', ar: 'متنوع' },
+  language: { en: 'Language', ar: 'اللغة' },
+  auto: { en: 'Same as document', ar: 'زي الملف' },
+  english: { en: 'English', ar: 'إنجليزي' },
+  arabic: { en: 'Arabic', ar: 'عربي' },
+  generate: { en: 'Generate questions', ar: 'ولّد الأسئلة' },
+  back: { en: 'Back', ar: 'رجوع' },
+  extracting: { en: 'Reading your PDF...', ar: 'بنقرأ ملفك...' },
+  generating: { en: 'Generating questions...', ar: 'بنولّد الأسئلة...' },
+  chunkOf: { en: 'Part {a} of {b}', ar: 'جزء {a} من {b}' },
+  quiz: { en: 'Quiz', ar: 'الاختبار' },
+  flashcards: { en: 'Flashcards', ar: 'الكروت' },
+  exportTab: { en: 'Export', ar: 'تصدير' },
+  check: { en: 'Check answer', ar: 'تأكد من الإجابة' },
+  next: { en: 'Next', ar: 'التالي' },
+  finish: { en: 'Finish', ar: 'إنهاء' },
+  score: { en: 'Your score', ar: 'نتيجتك' },
+  restart: { en: 'Retake quiz', ar: 'أعد الاختبار' },
+  flip: { en: 'Flip', ar: 'اقلب الكارت' },
+  knewIt: { en: 'I knew it', ar: 'كنت عارفها' },
+  didntKnow: { en: "Didn't know", ar: 'مش عارفها' },
+  exportAnki: { en: 'Download for Anki (.tsv)', ar: 'تحميل لـ Anki (.tsv)' },
+  exportCsv: { en: 'Download CSV', ar: 'تحميل CSV' },
+  exportJson: { en: 'Download JSON', ar: 'تحميل JSON' },
+  exportHint: {
+    en: 'In Anki: File > Import, pick the .tsv, fields separated by Tab.',
+    ar: 'في Anki: ملف > استيراد، اختار ملف .tsv والحقول مفصولة بـ Tab.',
+  },
+  newFile: { en: 'New file', ar: 'ملف جديد' },
+  needKey: { en: 'Add your AI key first', ar: 'ضيف مفتاح الذكاء الاصطناعي الأول' },
+  errorGeneric: { en: 'Something went wrong', ar: 'حصل خطأ' },
+  pasteTitle: { en: 'Paste your text', ar: 'الصق النص' },
+  useText: { en: 'Use this text', ar: 'استخدم النص ده' },
+  cancel: { en: 'Cancel', ar: 'إلغاء' },
+  questionOf: { en: 'Question {a} of {b}', ar: 'سؤال {a} من {b}' },
+  cardOf: { en: 'Card {a} of {b}', ar: 'كارت {a} من {b}' },
+  correct: { en: 'Correct!', ar: 'صح!' },
+  wrong: { en: 'Not quite', ar: 'مش صح' },
+  noKeyBanner: {
+    en: 'No API key set. You can try the sample, or add a key to use your own files.',
+    ar: 'مفيش مفتاح API. تقدر تجرب العينة أو تضيف مفتاح عشان تستخدم ملفاتك.',
+  },
+};
+
+export type StringKey = keyof typeof strings;
+
+export function t(lang: Lang, key: StringKey, vars?: Record<string, string | number>): string {
+  let s = strings[key][lang];
+  if (vars) for (const [k, v] of Object.entries(vars)) s = s.replaceAll('{' + k + '}', String(v));
+  return s;
+}
