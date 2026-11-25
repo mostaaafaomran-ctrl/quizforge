@@ -29,6 +29,8 @@ const strings = {
     en: 'Stored only in this browser (localStorage). Never sent anywhere except the AI provider.',
     ar: 'يُحفظ في هذا المتصفح فقط. لا يُرسل لأي مكان غير مزود الذكاء الاصطناعي.',
   },
+  getKey: { en: 'Get your key', ar: 'إزاي تجيب المفتاح' },
+  openKeyPage: { en: 'Open key page', ar: 'افتح صفحة المفتاح' },
   model: { en: 'Model', ar: 'النموذج' },
   save: { en: 'Save', ar: 'حفظ' },
   configure: { en: 'What do you want from this file?', ar: 'عايز تطلع إيه من الملف ده؟' },
